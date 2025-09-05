@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Madagascar">
+  <rect width="1200" height="800" fill="#fff5f5"/>
+  <rect x="220" y="160" width="760" height="480" rx="40" fill="#FFFFFF" stroke="#403D1E" stroke-width="6"/>
+  <text x="600" y="420" text-anchor="middle" font-family="Montserrat, Arial" font-size="42" fill="#403D1E">Madagascar</text>
+</svg>

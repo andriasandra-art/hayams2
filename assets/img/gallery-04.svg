@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Victoire">
+  <rect width="1200" height="800" fill="#fff5f5"/>
+  <path d="M160 560 C320 420, 880 420, 1040 560" stroke="#BF0B1A" stroke-width="14" fill="none"/>
+  <text x="600" y="540" text-anchor="middle" font-family="Montserrat, Arial" font-size="42" fill="#403D1E">Victoire</text>
+</svg>

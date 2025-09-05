@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Animal 11">
+  <rect width="800" height="600" fill="#fff5f5"/>
+  <g fill="none" stroke="#403D1E" stroke-width="18" stroke-linecap="round">
+    <circle cx="400" cy="300" r="160"/>
+    <path d="M400 140 L400 460"/>
+  </g>
+  <text x="400" y="315" text-anchor="middle" font-family="Montserrat, Arial" font-size="64" fill="#BF0B1A">11</text>
+</svg>

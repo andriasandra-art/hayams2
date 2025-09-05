@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Animal 7">
+  <rect width="800" height="600" fill="#fff5f5"/>
+  <path d="M140 420 Q400 120 660 420" fill="none" stroke="#BF0B1A" stroke-width="24" stroke-linecap="round"/>
+  <text x="400" y="500" text-anchor="middle" font-family="Montserrat, Arial" font-size="64" fill="#403D1E">7</text>
+</svg>

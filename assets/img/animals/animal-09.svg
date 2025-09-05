@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Animal 9">
+  <rect width="800" height="600" fill="#fff5f5"/>
+  <g fill="#403D1E">
+    <rect x="260" y="220" width="280" height="40" rx="8"/>
+    <rect x="260" y="280" width="280" height="40" rx="8" opacity=".8"/>
+    <rect x="260" y="340" width="280" height="40" rx="8" opacity=".6"/>
+  </g>
+  <text x="400" y="520" text-anchor="middle" font-family="Montserrat, Arial" font-size="64" fill="#403D1E">9</text>
+</svg>

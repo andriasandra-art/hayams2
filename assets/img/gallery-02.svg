@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mise en place">
+  <rect width="1200" height="800" fill="#fff5f5"/>
+  <g fill="#BF0B1A">
+    <rect x="140" y="180" width="220" height="140" rx="16" opacity=".9"/>
+    <rect x="420" y="180" width="220" height="140" rx="16" opacity=".7"/>
+    <rect x="700" y="180" width="220" height="140" rx="16" opacity=".5"/>
+  </g>
+  <text x="600" y="560" text-anchor="middle" font-family="Montserrat, Arial" font-size="42" fill="#403D1E">Mise en place</text>
+</svg>
