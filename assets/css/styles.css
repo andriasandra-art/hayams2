@@ -81,6 +81,25 @@ p { margin: 0 0 12px; }
 .stat .label { font-weight: 700; color: var(--brown); }
 .stat small { display: block; margin-top: 6px; color: var(--muted); }
 
+/* Rules text block */
+.rules-text { 
+  padding: 16px 18px; 
+  background: #f7faf7; 
+  border-left: 4px solid var(--brown); 
+  border-radius: 10px; 
+}
+.rules-text h3 { margin: 0 0 10px; font-size: 22px; color: var(--brown); }
+.rules-text h4 { margin: 14px 0 6px; font-size: 18px; color: var(--brown); }
+.rules-text h5 { margin: 10px 0 4px; font-size: 16px; color: var(--brown); }
+.rules-text p { margin: 0 0 10px; }
+.rules-text ol { padding-left: 20px; margin: 0 0 12px; }
+.rules-text li { margin: 6px 0; }
+.rules-text strong { color: var(--red); }
+
+@media (max-width: 680px) {
+  .rules-text { padding: 12px 14px; }
+}
+
 /* Contact */
 .contact-form { max-width: 640px; }
 .form-row { display: grid; gap: 6px; margin: 12px 0 16px; }
