@@ -9,9 +9,15 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css" />
+  <script src="assets/js/translations.js"></script>
 </head>
 <body>
   <header class="site-header" id="top">
+    <div class="language-selector">
+      <a href="#" class="lang-fr active">FR</a>
+      <span>|</span>
+      <a href="#" class="lang-en">EN</a>
+    </div>
     <div class="container header-inner">
       <a href="#top" class="logo" aria-label="Hay'Ams Accueil">
         <img src="assets/img/logo.svg" alt="Logo Hay'Ams" />
@@ -19,14 +25,13 @@
       <nav class="main-nav" aria-label="Navigation principale">
         <button class="nav-toggle" aria-expanded="false" aria-controls="menu">☰</button>
         <ul id="menu">
-          <li><a href="#accueil">Accueil</a></li>
-          <li><a href="#regles">Règles du jeu</a></li>
-          <li><a href="#contenu">Contenu de la boîte</a></li>
-          <li><a href="#madagascar">Madagascar</a></li>
-          <li><a href="#animaux">Les animaux de Hay'Ams</a></li>
-          <li><a href="#galerie">Galerie</a></li>
-          <li><a href="#acheter" class="btn btn-primary">Acheter</a></li>
-          <li><a href="#contact" class="btn btn-outline">Contact</a></li>
+          <li><a href="#accueil" data-i18n="nav.home">Accueil</a></li>
+          <li><a href="#regles" data-i18n="nav.rules">Règles du jeu</a></li>
+          <li><a href="#contenu" data-i18n="nav.content">Contenu de la boîte</a></li>
+          <li><a href="#madagascar" data-i18n="nav.madagascar">Madagascar</a></li>
+          <li><a href="#animaux" data-i18n="nav.animals">Les animaux de Hay'Ams</a></li>
+          <li><a href="#galerie" data-i18n="nav.gallery">Galerie</a></li>
+          <li><a href="#contact" class="btn btn-outline" data-i18n="nav.contact">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -37,12 +42,11 @@
     <section id="accueil" class="section hero">
       <div class="container grid two">
         <div class="hero-text">
-          <h1>Hay'Ams</h1>
-          <p class="tagline">Stratégie, esprit d’équipe et nature de Madagascar</p>
-          <p>À travers 11 animaux endémiques de Madagascar, Hay’Ams mêle stratégie et complicité (avec une bonne dose de ruse!). Chuchotez des signes secrets, gardez votre sérieux (ou pas), surprenez l’adversaire et marquez des points. Ludique, éducatif et un brin malicieux: observez, anticipez, choisissez vite… puis criez « Hay’Ams ! » avant les autres.</p>
+          <h1 data-i18n="hero.title">Hay'Ams</h1>
+          <p class="tagline" data-i18n="hero.tagline">Stratégie, esprit d'équipe et nature de Madagascar</p>
+          <p data-i18n="hero.description">À travers 11 animaux endémiques de Madagascar, Hay'Ams mêle stratégie et complicité (avec une bonne dose de ruse!). Chuchotez des signes secrets, gardez votre sérieux (ou pas), surprenez l'adversaire et marquez des points. Ludique, éducatif et un brin malicieux: observez, anticipez, choisissez vite… puis criez « Hay'Ams ! » avant les autres.</p>
           <div class="cta-row">
-            <a href="#regles" class="btn btn-primary">Découvrir les règles</a>
-            <a href="#acheter" class="btn btn-ghost">Commander</a>
+            <a href="#regles" class="btn btn-primary" data-i18n="hero.cta">Découvrir les règles</a>
           </div>
         </div>
         <div class="hero-visual reveal">
@@ -54,35 +58,38 @@
     <!-- Règles du jeu -->
     <section id="regles" class="section alt">
       <div class="container">
-        <h2>Règles du jeu</h2>
+        <h2 data-i18n="rules.title">Règles du jeu</h2>
         <div class="card reveal rules-text">
-          <h3>Hay’Ams – Règles du jeu</h3>
-          <h4>Nombre de joueurs</h4>
-          <p>4, 6 ou 8 joueurs.</p>
-          <h4>But du jeu</h4>
-          <p>Constituer un Hay’Ams – composition de 4 cartes de même figure – et le signaler à son partenaire sans se faire remarquer.</p>
-          <h4>Mise en place des joueurs</h4>
-          <p>Formez des équipes de 2 joueurs. Chaque équipe convient d’un signal secret à se transmettre. Placez les joueurs d’une même équipe face à face, intercalés par des joueurs de l’équipe adverse. Distribuez 4 cartes à chaque joueur. Constituez un « talon » avec les cartes restantes, au centre de la table.</p>
-          <h4>Déroulement de la partie</h4>
+          <h3 data-i18n="rules.subtitle">Hay’Ams – Règles du jeu</h3>
+          <h4 data-i18n="rules.setup">Mise en place des joueurs</h4>
+          <p data-i18n="rules.setup.text">Formez des équipes de 2 joueurs. Chaque équipe convient d’un signal secret à se transmettre. Placez les joueurs d’une même équipe face à face, intercalés par des joueurs de l’équipe adverse. Distribuez 4 cartes à chaque joueur. Constituez un « talon » avec les cartes restantes, au centre de la table.</p>
+          <h4 data-i18n="rules.howtoplay">Déroulement de la partie</h4>
           <ol>
-            <li>Le premier joueur pioche une carte dans le « talon ».</li>
-            <li>Si la carte piochée l’aide à constituer un Hay’Ams, il la garde. Sinon, il libère une carte inutile et la dépose dans une pile appelée « poubelle ».</li>
-            <li>Les autres joueurs procèdent de la même manière, à tour de rôle, dans le sens de l’aiguille d’une montre. Si le « talon » est épuisé, mélangez les cartes de la « poubelle » pour constituer un nouveau « talon ».</li>
-            <li>Lorsqu’un joueur a un Hay’Ams, il informe discrètement son coéquipier grâce à leur signal secret.</li>
-            <li>Son coéquipier crie « Hay’Ams ! », et l’équipe remporte un point.</li>
+            <li data-i18n="rules.howtoplay.step1">Le premier joueur pioche une carte dans le « talon ».</li>
+            <li data-i18n="rules.howtoplay.step2">Si la carte piochée l’aide à constituer un Hay’Ams, il la garde. Sinon, il libère une carte inutile et la dépose dans une pile appelée « poubelle ».</li>
+            <li data-i18n="rules.howtoplay.step3">Les autres joueurs procèdent de la même manière, à tour de rôle, dans le sens de l’aiguille d’une montre. Si le « talon » est épuisé, mélangez les cartes de la « poubelle » pour constituer un nouveau « talon ».</li>
+            <li data-i18n="rules.howtoplay.step4">Lorsqu’un joueur a un Hay’Ams, il informe discrètement son coéquipier grâce à leur signal secret.</li>
+            <li data-i18n="rules.howtoplay.step5">Son coéquipier crie « Hay’Ams ! », et l’équipe remporte un point.</li>
           </ol>
-          <p><strong>ContreHay’Ams :</strong> Si un joueur adverse pense avoir remarqué le signal secret, il peut dire « ContreHay’Ams ».</p>
-          <p>Si l’accusation est correcte, son équipe gagne un point. Si l’accusation est incorrecte, l’équipe accusée gagne un point.</p>
-          <h4>Fin de la partie</h4>
-          <p>La première équipe qui atteint 5 points remporte la partie.</p>
-          <h4>Cartes spéciales</h4>
-          <h5>Carte Kadoa</h5>
-          <p>La carte Kadoa est un joker qui peut remplacer n’importe quelle carte pour constituer un Hay’Ams. Il est inutile de garder 2 cartes Kadoa, une seule peut être utilisée pour aider à constituer un Hay’Ams.</p>
-          <h5>Carte Kolaps</h5>
-          <p>La « carte Kolaps » est une carte maudite. Lorsqu’un joueur pioche une carte Kolaps, il doit la conserver et la déposer face visible devant lui, puis jeter une de ses autres cartes. Il peut se débarrasser de la carte maudite lors de son prochain tour. Une fois utilisées, les cartes spéciales sont retirées du jeu et ne retournent pas dans la pile « poubelle ».</p>
+          <p data-i18n="rules.special.title"><strong>ContreHay’Ams :</strong> Si un joueur adverse pense avoir remarqué le signal secret, il peut dire « ContreHay’Ams ».</p>
+          <p data-i18n="rules.special.text">Si l’accusation est correcte, son équipe gagne un point. Si l’accusation est incorrecte, l’équipe accusée gagne un point.</p>
+          <h4 data-i18n="rules.winning">Fin de la partie</h4>
+          <p data-i18n="rules.winning.text">La première équipe qui atteint 5 points remporte la partie.</p>
+          <h4 data-i18n="rules.special.cards">Cartes spéciales</h4>
+          <h5 data-i18n="rules.special.kadoa">Carte Kadoa</h5>
+          <p data-i18n="rules.special.kadoa.text">La carte Kadoa est un joker qui peut remplacer n’importe quelle carte pour constituer un Hay’Ams. Il est inutile de garder 2 cartes Kadoa, une seule peut être utilisée pour aider à constituer un Hay’Ams.</p>
+          <h5 data-i18n="rules.special.kolaps">Carte Kolaps</h5>
+          <p data-i18n="rules.special.kolaps.text">La « carte Kolaps » est une carte maudite. Lorsqu’un joueur pioche une carte Kolaps, il doit la conserver et la déposer face visible devant lui, puis jeter une de ses autres cartes. Il peut se débarrasser de la carte maudite lors de son prochain tour. Une fois utilisées, les cartes spéciales sont retirées du jeu et ne retournent pas dans la pile « poubelle ».</p>
+          <h4 data-i18n="rules.endgame">Fin de la partie</h4>
+          <p data-i18n="rules.endgame.text">La première équipe qui atteint 5 points remporte la partie.</p>
+          <h4 data-i18n="rules.special_cards">Cartes spéciales</h4>
+          <h5 data-i18n="rules.special.kadoa">Carte Kadoa</h5>
+          <p data-i18n="rules.special.kadoa.desc">La carte Kadoa est un joker qui peut remplacer n'importe quelle carte pour constituer un Hay'Ams. Il est inutile de garder 2 cartes Kadoa, une seule peut être utilisée pour aider à constituer un Hay'Ams.</p>
+          <h5 data-i18n="rules.special.kolaps">Carte Kolaps</h5>
+          <p data-i18n="rules.special.kolaps.desc">La « carte Kolaps » est une carte maudite. Lorsqu'un joueur pioche une carte Kolaps, il doit la conserver et la déposer face visible devant lui, puis jeter une de ses autres cartes. Il peut se débarrasser de la carte maudite lors de son prochain tour. Une fois utilisées, les cartes spéciales sont retirées du jeu et ne retournent pas dans la pile « poubelle ».</p>
           
         </div>
-        <p>Retrouvez ci-dessous le livret officiel des règles du jeu en PDF, disponible en visualisation et en téléchargement.</p>
+        <p data-i18n="rules.pdf_notice">Retrouvez ci-dessous le livret officiel des règles du jeu en PDF, disponible en visualisation et en téléchargement.</p>
         <div class="card reveal" style="padding:0; overflow:hidden;">
           <object data="Règles.pdf" type="application/pdf" width="100%" height="700px" aria-label="Règles du jeu en PDF">
             <p>Votre navigateur ne peut pas afficher le PDF. <a href="Règles.pdf" target="_blank" rel="noopener">Télécharger les règles du jeu (PDF)</a>.</p>
@@ -94,13 +101,14 @@
     <!-- Contenu de la boîte -->
     <section id="contenu" class="section">
       <div class="container">
-        <h2>Contenu de la boîte</h2>
+        <h2 data-i18n="content.title">Contenu de la boîte</h2>
         <div class="card reveal">
-          <p>Ce jeu contient 44 cartes Animaux de Madagascar (4 cartes par animal, soit 11 animaux), 2 cartes Kadoa, 2 cartes Kolaps, et les règles du jeu.</p>
+          <p data-i18n="content.text">Ce jeu contient 44 cartes Animaux de Madagascar (4 cartes par animal, soit 11 animaux), 2 cartes Kadoa, 2 cartes Kolaps, et les règles du jeu.</p>
+          <p data-i18n="content.details">Les cartes sont fabriquées en carton épais et résistant, avec une finition mate pour éviter les reflets. Les illustrations sont réalisées à la main par des artistes malgaches.</p>
         </div>
         <div class="grid two contenu-grid" style="margin-top:16px;">
           <div>
-            <h3>Cartes "Animaux"</h3>
+            <h3 data-i18n="content.animals.title">Cartes "Animaux"</h3>
             <div class="grid four gallery">
               <img class="reveal" src="animaux/1.png" alt="Carte animal 1" />
               <img class="reveal" src="animaux/2.png" alt="Carte animal 2" />
@@ -113,13 +121,28 @@
               <img class="reveal" src="animaux/9.png" alt="Carte animal 9" />
               <img class="reveal" src="animaux/10.png" alt="Carte animal 10" />
               <img class="reveal" src="animaux/11.png" alt="Carte animal 11" />
+              <img class="reveal" src="animaux/12.png" alt="Carte animal 12" />
             </div>
+            <p data-i18n="content.animals.desc">11 animaux endémiques de Madagascar, avec 4 exemplaires de chaque.</p>
           </div>
           <div>
-            <h3>Cartes spéciales</h3>
+            <h3 data-i18n="content.special.title">Cartes spéciales</h3>
             <div class="grid two gallery">
-              <img class="reveal" src="speciales/12.png" alt="Carte spéciale 1" />
-              <img class="reveal" src="speciales/13.png" alt="Carte spéciale 2" />
+              <div>
+                <img class="reveal" src="speciales/12.png" alt="Carte Kadoa" />
+                <h4 data-i18n="content.kadoa.title">Kadoa</h4>
+                <p data-i18n="content.kadoa.desc">2 cartes joker qui peuvent remplacer n'importe quelle carte.</p>
+              </div>
+              <div>
+                <img class="reveal" src="speciales/13.png" alt="Carte Kolaps" />
+                <h4 data-i18n="content.kolaps.title">Kolaps</h4>
+                <p data-i18n="content.kolaps.desc">2 cartes spéciales avec un pouvoir unique.</p>
+              </div>
+            </div>
+            <div class="rules-pdf" style="margin-top: 24px;">
+              <h4 data-i18n="content.rules.title">Règles du jeu</h4>
+              <p data-i18n="content.rules.desc">Un livret détaillé expliquant comment jouer.</p>
+              <a href="Règles.pdf" class="btn btn-outline" target="_blank" data-i18n="content.rules.download">Télécharger les règles (PDF)</a>
             </div>
           </div>
         </div>
@@ -128,35 +151,33 @@
 
     <!-- Madagascar -->
     <section id="madagascar" class="section">
-      <div class="container grid two">
-        <div class="reveal">
-          <h2>Madagascar, île de nature</h2>
-          <p>Berceau du jeu Hay'Ams, Madagascar abrite une biodiversité exceptionnelle, avec un taux d’endémisme parmi les plus élevés au monde. Chaque partie est un voyage à travers ses forêts, ses côtes et ses espèces uniques.</p>
-          <ul class="feature-list">
-            <li>Faune et flore endémiques</li>
-            <li>Culture chaleureuse et esprit collectif</li>
-            <li>Inspiration pour les mécaniques de jeu</li>
-          </ul>
-          <div class="stats">
-            <div class="stat reveal">
-              <span class="num">11 000+</span>
-              <span class="label">plantes endémiques</span>
-              <small>estimation globale</small>
+      <div class="container">
+        <h2 data-i18n="madagascar.title">Madagascar, île de nature</h2>
+        <p class="subtitle" data-i18n="madagascar.subtitle">Découvrez la biodiversité unique de Madagascar</p>
+        
+        <div class="grid two">
+          <div class="reveal">
+            <p data-i18n="madagascar.text1">Madagascar, la 4e plus grande île du monde, est un véritable sanctuaire de la nature avec une biodiversité unique au monde. Plus de 80% des espèces animales et végétales de l'île sont endémiques, ce qui signifie qu'on ne les trouve nulle part ailleurs sur Terre.</p>
+            <p data-i18n="madagascar.text2">Cette richesse naturelle exceptionnelle est le fruit de l'isolement de l'île, séparée du continent africain il y a environ 160 millions d'années. Les forêts tropicales humides de l'est, les forêts épineuses du sud, et les récifs coralliens qui entourent l'île abritent une faune et une flore d'une incroyable diversité.</p>
+            
+            <div class="card mt-4">
+              <h3 data-i18n="madagascar.biodiversity.title">Une biodiversité exceptionnelle</h3>
+              <p data-i18n="madagascar.biodiversity.text">Madagascar abrite plus de 100 espèces de lémuriens, des centaines d'espèces d'oiseaux, des milliers d'espèces de plantes, et une multitude d'espèces uniques de reptiles, amphibiens et insectes.</p>
             </div>
-            <div class="stat reveal">
-              <span class="num">110+</span>
-              <span class="label">espèces de lémuriens</span>
-              <small>toutes endémiques</small>
+            
+            <div class="card mt-4">
+              <h3 data-i18n="madagascar.conservation.title">Conservation et protection</h3>
+              <p data-i18n="madagascar.conservation.text">Malgré sa richesse, la biodiversité de Madagascar est menacée par la déforestation et le changement climatique. De nombreuses initiatives locales et internationales œuvrent pour protéger ces écosystèmes uniques.</p>
             </div>
-            <div class="stat reveal">
-              <span class="num">90%</span>
-              <span class="label">des reptiles endémiques</span>
-              <small>taux d’endémisme</small>
+            
+            <div class="card mt-4">
+              <h3 data-i18n="madagascar.game.title">Madagascar dans Hay'Ams</h3>
+              <p data-i18n="madagascar.game.text">Avec Hay'Ams, partez à la découverte de 11 animaux emblématiques de Madagascar, chacun avec ses particularités et son importance dans l'écosystème malgache.</p>
             </div>
           </div>
-        </div>
-        <div class="reveal">
-          <img src="assets/img/gallery-05.svg" alt="Illustration Madagascar" />
+          <div class="reveal">
+            <img src="Madagascar.png" alt="Carte de Madagascar" class="img-fluid" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);" data-i18n="[alt]madagascar.image.alt" />
+          </div>
         </div>
       </div>
     </section>
@@ -164,20 +185,195 @@
     <!-- Les animaux -->
     <section id="animaux" class="section alt">
       <div class="container">
-        <h2>Les animaux de Hay'Ams</h2>
-        <p>Découvrez 11 animaux endémiques de Madagascar présents dans le jeu. Chaque animal a sa personnalité et son pouvoir.</p>
+        <h2 data-i18n="animals.title">Les animaux de Hay'Ams</h2>
+        <p data-i18n="animals.subtitle">Découvrez 11 animaux endémiques de Madagascar présents dans le jeu. Chaque animal a sa personnalité et son pouvoir.</p>
         <div class="grid four cards-animals">
-          <article class="card reveal"><img src="animaux/1.png" alt="Tortue étoilée (Astrochelys radiata)" /><h3>Tortue étoilée (Astrochelys radiata)</h3><p>Tortue à carapace ornée de motifs en étoile, véritable symbole de Madagascar.</p><details class="specs"><summary>Voir les caractéristiques</summary><ul><li><strong>Taille:</strong> 30-40 cm</li><li><strong>Longévité:</strong> +100 ans</li><li><strong>Alimentation:</strong> Herbivore (herbes, fruits, cactus)</li><li><strong>Habitat:</strong> Zones arides et semi-arides du sud</li><li><strong>Spécificité:</strong> Carapace aux motifs étoilés uniques</li><li><strong>Comportement:</strong> Solitaire ou petits groupes</li><li><strong>Reproduction:</strong> Ovipare, femelle pond dans des trous</li></ul></details></article>
-          <article class="card reveal"><img src="animaux/2.png" alt="Bedotia (Bedotia geayi)" /><h3>Bedotia (Bedotia geayi)</h3><p>Poisson d’eau douce coloré, très prisé en aquariophilie.</p><details class="specs"><summary>Voir les caractéristiques</summary><ul><li><strong>Taille:</strong> 6-10 cm</li><li><strong>Longévité:</strong> 5-6 ans</li><li><strong>Alimentation:</strong> Omnivore (insectes, algues, crustacés)</li><li><strong>Habitat:</strong> Rivières claires et rapides</li><li><strong>Spécificité:</strong> Nageoires colorées et attrayantes</li><li><strong>Comportement:</strong> Vit en bancs</li><li><strong>Reproduction:</strong> Ponte en groupe</li></ul></details></article>
-          <article class="card reveal"><img src="animaux/3.png" alt="Papillon comète (Argema mittrei)" /><h3>Papillon comète (Argema mittrei)</h3><p>Papillon spectaculaire aux ailes prolongées de longues queues.</p><details class="specs"><summary>Voir les caractéristiques</summary><ul><li><strong>Taille:</strong> 15-20 cm d’envergure</li><li><strong>Longévité:</strong> 4-5 jours adulte</li><li><strong>Alimentation:</strong> Ne se nourrit pas adulte</li><li><strong>Habitat:</strong> Forêts tropicales humides</li><li><strong>Spécificité:</strong> Longues queues qui perturbent les chauves-souris</li><li><strong>Comportement:</strong> Solitaire</li><li><strong>Reproduction:</strong> Accouplement rapide suivi de la ponte</li></ul></details></article>
-          <article class="card reveal"><img src="animaux/4.png" alt="Fossa (Cryptoprocta ferox)" /><h3>Fossa (Cryptoprocta ferox)</h3><p>Plus grand carnivore de Madagascar, agile et redoutable prédateur.</p><details class="specs"><summary>Voir les caractéristiques</summary><ul><li><strong>Taille:</strong> Corps 70-80 cm + queue 65-70 cm</li><li><strong>Longévité:</strong> 15-20 ans (captivité)</li><li><strong>Alimentation:</strong> Carnivore (lémuriens, oiseaux, reptiles)</li><li><strong>Habitat:</strong> Forêts tropicales, sèches et humides</li><li><strong>Spécificité:</strong> Excellente capacité à grimper</li><li><strong>Comportement:</strong> Solitaire</li><li><strong>Reproduction:</strong> Accouplements dans les arbres</li></ul></details></article>
-          <article class="card reveal"><img src="animaux/5.png" alt="Caméléon géant (Furcifer oustaleti)" /><h3>Caméléon géant (Furcifer oustaleti)</h3><p>Le plus grand caméléon du monde, maître du camouflage.</p><details class="specs"><summary>Voir les caractéristiques</summary><ul><li><strong>Taille:</strong> Jusqu’à 68 cm</li><li><strong>Longévité:</strong> 5-10 ans</li><li><strong>Alimentation:</strong> Insectivore (insectes, petits reptiles)</li><li><strong>Habitat:</strong> Forêts sèches, savanes, zones agricoles</li><li><strong>Spécificité:</strong> Capacité exceptionnelle de camouflage</li><li><strong>Comportement:</strong> Solitaire</li><li><strong>Reproduction:</strong> Femelle pond dans le sol</li></ul></details></article>
-          <article class="card reveal"><img src="animaux/6.png" alt="Scarabée girafe (Trachelophorus giraffa)" /><h3>Scarabée girafe (Trachelophorus giraffa)</h3><p>Coléoptère au cou démesuré, utilisé par les mâles pour se battre.</p><details class="specs"><summary>Voir les caractéristiques</summary><ul><li><strong>Taille:</strong> 2.5-3 cm</li><li><strong>Longévité:</strong> ~1 an</li><li><strong>Alimentation:</strong> Herbivore (feuilles spécifiques)</li><li><strong>Habitat:</strong> Forêts humides</li><li><strong>Spécificité:</strong> Cou allongé chez les mâles</li><li><strong>Comportement:</strong> Solitaire</li><li><strong>Reproduction:</strong> Mâle construit des structures pour attirer</li></ul></details></article>
-          <article class="card reveal"><img src="animaux/7.png" alt="Tenrec (Tenrec ecaudatus)" /><h3>Tenrec (Tenrec ecaudatus)</h3><p>Petit mammifère insectivore, rappelant le hérisson.</p><details class="specs"><summary>Voir les caractéristiques</summary><ul><li><strong>Taille:</strong> 25-39 cm</li><li><strong>Longévité:</strong> 5-10 ans</li><li><strong>Alimentation:</strong> Omnivore (fruits, insectes, petits animaux)</li><li><strong>Habitat:</strong> Forêts, prairies, zones agricoles</li><li><strong>Spécificité:</strong> Communication par ultrasons</li><li><strong>Comportement:</strong> Solitaire ou familial</li><li><strong>Reproduction:</strong> Jusqu’à 32 petits</li></ul></details></article>
-          <article class="card reveal"><img src="animaux/8.png" alt="Boa terrestre (Acrantophis madagascariensis)" /><h3>Boa terrestre (Acrantophis madagascariensis)</h3><p>Grand serpent non venimeux, qui chasse par constriction.</p><details class="specs"><summary>Voir les caractéristiques</summary><ul><li><strong>Taille:</strong> 2-3 m</li><li><strong>Longévité:</strong> 20-30 ans</li><li><strong>Alimentation:</strong> Carnivore (rongeurs, oiseaux)</li><li><strong>Habitat:</strong> Forêts sèches, zones rocheuses</li><li><strong>Spécificité:</strong> Force musculaire remarquable</li><li><strong>Comportement:</strong> Solitaire</li><li><strong>Reproduction:</strong> Ovipare, femelle protège les œufs</li></ul></details></article>
-          <article class="card reveal"><img src="animaux/9.png" alt="Huppe de Madagascar (Upupa marginata)" /><h3>Huppe de Madagascar (Upupa marginata)</h3><p>Oiseau à crête érectile, apparenté à la huppe fasciée.</p><details class="specs"><summary>Voir les caractéristiques</summary><ul><li><strong>Taille:</strong> 25-30 cm</li><li><strong>Longévité:</strong> 10-12 ans</li><li><strong>Alimentation:</strong> Insectivore (larves, insectes, araignées)</li><li><strong>Habitat:</strong> Forêts ouvertes, savanes, zones agricoles</li><li><strong>Spécificité:</strong> Crête utilisée en séduction ou intimidation</li><li><strong>Comportement:</strong> Solitaire ou en couples</li><li><strong>Reproduction:</strong> Monogame, nids dans cavités</li></ul></details></article>
-          <article class="card reveal"><img src="animaux/10.png" alt="Maki catta (Lémur catta)" /><h3>Maki catta (Lémur catta)</h3><p>Lémurien emblématique, connu pour sa queue annelée noire et blanche.</p><details class="specs"><summary>Voir les caractéristiques</summary><ul><li><strong>Taille:</strong> 39-46 cm (corps) + 56-63 cm (queue)</li><li><strong>Longévité:</strong> 16-20 ans sauvage, 30 ans captivité</li><li><strong>Alimentation:</strong> Omnivore</li><li><strong>Habitat:</strong> Forêts sèches, zones rocheuses</li><li><strong>Spécificité:</strong> Communication avec la queue</li><li><strong>Comportement:</strong> Groupes de 5 à 30, dominés par femelles</li><li><strong>Reproduction:</strong> Polygame, période avril-mai</li></ul></details></article>
-          <article class="card reveal"><img src="animaux/11.png" alt="Grenouille tomate (Dyscophus antongilii)" /><h3>Grenouille tomate (Dyscophus antongilii)</h3><p>Grenouille rouge vif dont la couleur signale sa toxicité.</p><details class="specs"><summary>Voir les caractéristiques</summary><ul><li><strong>Taille:</strong> 6-10 cm</li><li><strong>Longévité:</strong> 8-10 ans (captivité)</li><li><strong>Alimentation:</strong> Insectivore</li><li><strong>Habitat:</strong> Forêts humides, zones marécageuses</li><li><strong>Spécificité:</strong> Peau rouge toxique</li><li><strong>Comportement:</strong> Solitaire sauf reproduction</li><li><strong>Reproduction:</strong> Ponte dans l’eau, mâle attire par chants</li></ul></details></article>
+          <!-- Tortue étoilée -->
+          <article class="card reveal">
+            <img src="photos/1.png" data-i18n="[alt]animals.card.alt;[title]animals.card.alt" data-i18n-options='{"animal": "Tortue étoilée"}' />
+            <h3 data-i18n="animal.tortoise.name">Tortue étoilée (Astrochelys radiata)</h3>
+            <p data-i18n="animal.tortoise.desc">Tortue à carapace ornée de motifs en étoile, véritable symbole de Madagascar.</p>
+            <details class="specs">
+              <summary data-i18n="animals.view_characteristics">Voir les caractéristiques</summary>
+              <ul>
+                <li><strong data-i18n="animals.specs.size">Taille:</strong> 30-40 cm</li>
+                <li><strong data-i18n="animals.specs.lifespan">Longévité:</strong> +100 ans</li>
+                <li><strong data-i18n="animals.specs.diet">Alimentation:</strong> <span data-i18n="animals.diets.herbivore">Herbivore</span> (herbes, fruits, cactus)</li>
+                <li><strong data-i18n="animals.specs.habitat">Habitat:</strong> <span data-i18n="animals.habitats.arid">Zones arides et semi-arides du sud</span></li>
+                <li><strong data-i18n="animals.specs.special">Spécificité:</strong> <span data-i18n="animals.special.star_pattern">Carapace aux motifs étoilés uniques</span></li>
+              </ul>
+            </details>
+          </article>
+
+          <!-- Bedotia -->
+          <article class="card reveal">
+            <img src="photos/2.png" data-i18n="[alt]animals.card.alt;[title]animals.card.alt" data-i18n-options='{"animal": "Bedotia"}' />
+            <h3 data-i18n="animal.bedotia.name">Bedotia (Bedotia geayi)</h3>
+            <p data-i18n="animal.bedotia.desc">Poisson d'eau douce coloré, très prisé en aquariophilie.</p>
+            <details class="specs">
+              <summary data-i18n="animals.view_characteristics">Voir les caractéristiques</summary>
+              <ul>
+                <li><strong data-i18n="animals.specs.size">Taille:</strong> 6-10 cm</li>
+                <li><strong data-i18n="animals.specs.lifespan">Longévité:</strong> 5-6 ans</li>
+                <li><strong data-i18n="animals.specs.diet">Alimentation:</strong> <span data-i18n="animals.diets.omnivore">Omnivore</span> (insectes, algues, crustacés)</li>
+                <li><strong data-i18n="animals.specs.habitat">Habitat:</strong> <span data-i18n="animals.habitats.rivers">Rivières claires et rapides</span></li>
+                <li><strong data-i18n="animals.specs.special">Spécificité:</strong> <span data-i18n="animals.special.colorful_fins">Nageoires colorées et attrayantes</span></li>
+              </ul>
+            </details>
+          </article>
+
+          <!-- Papillon comète -->
+          <article class="card reveal">
+            <img src="photos/3.png" data-i18n="[alt]animals.card.alt;[title]animals.card.alt" data-i18n-options='{"animal": "Papillon comète"}' />
+            <h3 data-i18n="animal.butterfly.name">Papillon comète (Argema mittrei)</h3>
+            <p data-i18n="animal.butterfly.desc">Papillon spectaculaire aux ailes prolongées de longues queues.</p>
+            <details class="specs">
+              <summary data-i18n="animals.view_characteristics">Voir les caractéristiques</summary>
+              <ul>
+                <li><strong data-i18n="animals.specs.size">Taille:</strong> 15-20 cm d'envergure</li>
+                <li><strong data-i18n="animals.specs.lifespan">Longévité:</strong> 4-5 jours à l'état adulte</li>
+                <li><strong data-i18n="animals.specs.diet">Alimentation:</strong> <span data-i18n="animals.diets.none_adult">Ne se nourrit pas à l'âge adulte</span></li>
+                <li><strong data-i18n="animals.specs.habitat">Habitat:</strong> <span data-i18n="animals.habitats.rainforest">Forêts tropicales humides</span></li>
+                <li><strong data-i18n="animals.specs.special">Spécificité:</strong> <span data-i18n="animals.special.long_tails">Longues queues qui perturbent les prédateurs</span></li>
+              </ul>
+            </details>
+          </article>
+
+          <!-- Fossa -->
+          <article class="card reveal">
+            <img src="photos/4.png" data-i18n="[alt]animals.card.alt;[title]animals.card.alt" data-i18n-options='{"animal": "Fossa"}' />
+            <h3 data-i18n="animal.fossa.name">Fossa (Cryptoprocta ferox)</h3>
+            <p data-i18n="animal.fossa.desc">Plus grand carnivore de Madagascar, agile et redoutable prédateur.</p>
+            <details class="specs">
+              <summary data-i18n="animals.view_characteristics">Voir les caractéristiques</summary>
+              <ul>
+                <li><strong data-i18n="animals.specs.size">Taille:</strong> Corps 70-80 cm + queue 65-70 cm</li>
+                <li><strong data-i18n="animals.specs.lifespan">Longévité:</strong> 15-20 ans (en captivité)</li>
+                <li><strong data-i18n="animals.specs.diet">Alimentation:</strong> <span data-i18n="animals.diets.carnivore">Carnivore</span> (lémuriens, oiseaux, reptiles)</li>
+                <li><strong data-i18n="animals.specs.habitat">Habitat:</strong> <span data-i18n="animals.habitats.forest">Forêts tropicales, sèches et humides</span></li>
+                <li><strong data-i18n="animals.specs.special">Spécificité:</strong> <span data-i18n="animals.special.climbing">Excellente capacité à grimper</span></li>
+              </ul>
+            </details>
+          </article>
+
+          <!-- Caméléon géant -->
+          <article class="card reveal">
+            <img src="photos/5.png" data-i18n="[alt]animals.card.alt;[title]animals.card.alt" data-i18n-options='{"animal": "Caméléon géant"}' />
+            <h3 data-i18n="animal.chameleon.name">Caméléon géant (Furcifer oustaleti)</h3>
+            <p data-i18n="animal.chameleon.desc">Le plus grand caméléon du monde, maître du camouflage.</p>
+            <details class="specs">
+              <summary data-i18n="animals.view_characteristics">Voir les caractéristiques</summary>
+              <ul>
+                <li><strong data-i18n="animals.specs.size">Taille:</strong> Jusqu'à 68 cm</li>
+                <li><strong data-i18n="animals.specs.lifespan">Longévité:</strong> 5-10 ans</li>
+                <li><strong data-i18n="animals.specs.diet">Alimentation:</strong> <span data-i18n="animals.diets.insectivore">Insectivore</span> (insectes, petits reptiles)</li>
+                <li><strong data-i18n="animals.specs.habitat">Habitat:</strong> <span data-i18n="animals.habitats.dry_forest">Forêts sèches, savanes, zones agricoles</span></li>
+                <li><strong data-i18n="animals.specs.special">Spécificité:</strong> <span data-i18n="animals.special.camouflage">Capacité exceptionnelle de camouflage</span></li>
+              </ul>
+            </details>
+          </article>
+
+          <!-- Scarabée girafe -->
+          <article class="card reveal">
+            <img src="photos/6.png" data-i18n="[alt]animals.card.alt;[title]animals.card.alt" data-i18n-options='{"animal": "Scarabée girafe"}' />
+            <h3 data-i18n="animal.beetle.name">Scarabée girafe (Trachelophorus giraffa)</h3>
+            <p data-i18n="animal.beetle.desc">Coléoptère au cou démesuré, utilisé par les mâles pour se battre.</p>
+            <details class="specs">
+              <summary data-i18n="animals.view_characteristics">Voir les caractéristiques</summary>
+              <ul>
+                <li><strong data-i18n="animals.specs.size">Taille:</strong> 2.5-3 cm</li>
+                <li><strong data-i18n="animals.specs.lifespan">Longévité:</strong> ~1 an</li>
+                <li><strong data-i18n="animals.specs.diet">Alimentation:</strong> <span data-i18n="animals.diets.herbivore">Herbivore</span> (feuilles spécifiques)</li>
+                <li><strong data-i18n="animals.specs.habitat">Habitat:</strong> <span data-i18n="animals.habitats.rainforest">Forêts humides</span></li>
+                <li><strong data-i18n="animals.specs.special">Spécificité:</strong> <span data-i18n="animals.special.long_neck">Cou allongé chez les mâles</span></li>
+              </ul>
+            </details>
+          </article>
+
+          <!-- Tenrec -->
+          <article class="card reveal">
+            <img src="photos/7.png" data-i18n="[alt]animals.card.alt;[title]animals.card.alt" data-i18n-options='{"animal": "Tenrec"}' />
+            <h3 data-i18n="animal.tenrec.name">Tenrec (Tenrec ecaudatus)</h3>
+            <p data-i18n="animal.tenrec.desc">Petit mammifère insectivore, rappelant le hérisson.</p>
+            <details class="specs">
+              <summary data-i18n="animals.view_characteristics">Voir les caractéristiques</summary>
+              <ul>
+                <li><strong data-i18n="animals.specs.size">Taille:</strong> 25-39 cm</li>
+                <li><strong data-i18n="animals.specs.lifespan">Longévité:</strong> 5-10 ans</li>
+                <li><strong data-i18n="animals.specs.diet">Alimentation:</strong> <span data-i18n="animals.diets.omnivore">Omnivore</span> (fruits, insectes, petits animaux)</li>
+                <li><strong data-i18n="animals.specs.habitat">Habitat:</strong> <span data-i18n="animals.habitats.varied">Forêts, prairies, zones agricoles</span></li>
+                <li><strong data-i18n="animals.specs.special">Spécificité:</strong> <span data-i18n="animals.special.ultrasound">Communication par ultrasons</span></li>
+              </ul>
+            </details>
+          </article>
+
+          <!-- Boa terrestre -->
+          <article class="card reveal">
+            <img src="photos/8.png" data-i18n="[alt]animals.card.alt;[title]animals.card.alt" data-i18n-options='{"animal": "Boa terrestre"}' />
+            <h3 data-i18n="animal.boa.name">Boa terrestre (Acrantophis madagascariensis)</h3>
+            <p data-i18n="animal.boa.desc">Grand serpent non venimeux, qui chasse par constriction.</p>
+            <details class="specs">
+              <summary data-i18n="animals.view_characteristics">Voir les caractéristiques</summary>
+              <ul>
+                <li><strong data-i18n="animals.specs.size">Taille:</strong> 2-3 m</li>
+                <li><strong data-i18n="animals.specs.lifespan">Longévité:</strong> 20-30 ans</li>
+                <li><strong data-i18n="animals.specs.diet">Alimentation:</strong> <span data-i18n="animals.diets.carnivore">Carnivore</span> (rongeurs, oiseaux)</li>
+                <li><strong data-i18n="animals.specs.habitat">Habitat:</strong> <span data-i18n="animals.habitats.rocky">Forêts sèches, zones rocheuses</span></li>
+                <li><strong data-i18n="animals.specs.special">Spécificité:</strong> <span data-i18n="animals.special.strength">Force musculaire remarquable</span></li>
+              </ul>
+            </details>
+          </article>
+
+          <!-- Huppe de Madagascar -->
+          <article class="card reveal">
+            <img src="photos/9.png" data-i18n="[alt]animals.card.alt;[title]animals.card.alt" data-i18n-options='{"animal": "Huppe de Madagascar"}' />
+            <h3 data-i18n="animal.hoopoe.name">Huppe de Madagascar (Upupa marginata)</h3>
+            <p data-i18n="animal.hoopoe.desc">Oiseau à crête érectile, apparenté à la huppe fasciée.</p>
+            <details class="specs">
+              <summary data-i18n="animals.view_characteristics">Voir les caractéristiques</summary>
+              <ul>
+                <li><strong data-i18n="animals.specs.size">Taille:</strong> 25-30 cm</li>
+                <li><strong data-i18n="animals.specs.lifespan">Longévité:</strong> 10-12 ans</li>
+                <li><strong data-i18n="animals.specs.diet">Alimentation:</strong> <span data-i18n="animals.diets.insectivore">Insectivore</span> (larves, insectes, araignées)</li>
+                <li><strong data-i18n="animals.specs.habitat">Habitat:</strong> <span data-i18n="animals.habitats.open_forest">Forêts ouvertes, savanes, zones agricoles</span></li>
+                <li><strong data-i18n="animals.specs.special">Spécificité:</strong> <span data-i18n="animals.special.crest">Crête utilisée en séduction ou intimidation</span></li>
+              </ul>
+            </details>
+          </article>
+
+          <!-- Maki catta -->
+          <article class="card reveal">
+            <img src="photos/10.png" data-i18n="[alt]animals.card.alt;[title]animals.card.alt" data-i18n-options='{"animal": "Maki catta"}' />
+            <h3 data-i18n="animal.lemur.name">Maki catta (Lémur catta)</h3>
+            <p data-i18n="animal.lemur.desc">Lémurien emblématique, connu pour sa queue annelée noire et blanche.</p>
+            <details class="specs">
+              <summary data-i18n="animals.view_characteristics">Voir les caractéristiques</summary>
+              <ul>
+                <li><strong data-i18n="animals.specs.size">Taille:</strong> 39-46 cm (corps) + 56-63 cm (queue)</li>
+                <li><strong data-i18n="animals.specs.lifespan">Longévité:</strong> 16-20 ans (sauvage), 30 ans (captivité)</li>
+                <li><strong data-i18n="animals.specs.diet">Alimentation:</strong> <span data-i18n="animals.diets.omnivore">Omnivore</span></li>
+                <li><strong data-i18n="animals.specs.habitat">Habitat:</strong> <span data-i18n="animals.habitats.dry_forest">Forêts sèches, zones rocheuses</span></li>
+                <li><strong data-i18n="animals.specs.special">Spécificité:</strong> <span data-i18n="animals.special.tail_communication">Communication avec la queue</span></li>
+              </ul>
+            </details>
+          </article>
+
+          <!-- Grenouille tomate -->
+          <article class="card reveal">
+            <img src="photos/11.png" data-i18n="[alt]animals.card.alt;[title]animals.card.alt" data-i18n-options='{"animal": "Grenouille tomate"}' />
+            <h3 data-i18n="animal.frog.name">Grenouille tomate (Dyscophus antongilii)</h3>
+            <p data-i18n="animal.frog.desc">Grenouille rouge vif dont la couleur signale sa toxicité.</p>
+            <details class="specs">
+              <summary data-i18n="animals.view_characteristics">Voir les caractéristiques</summary>
+              <ul>
+                <li><strong data-i18n="animals.specs.size">Taille:</strong> 6-10 cm</li>
+                <li><strong data-i18n="animals.specs.lifespan">Longévité:</strong> 8-10 ans (en captivité)</li>
+                <li><strong data-i18n="animals.specs.diet">Alimentation:</strong> <span data-i18n="animals.diets.insectivore">Insectivore</span></li>
+                <li><strong data-i18n="animals.specs.habitat">Habitat:</strong> <span data-i18n="animals.habitats.wetlands">Forêts humides, zones marécageuses</span></li>
+                <li><strong data-i18n="animals.specs.special">Spécificité:</strong> <span data-i18n="animals.special.toxic_skin">Peau rouge toxique</span></li>
+              </ul>
+            </details>
+          </article>
         </div>
       </div>
     </section>
@@ -202,25 +398,6 @@
       </div>
     </section>
 
-    <!-- Acheter -->
-    <section id="acheter" class="section alt">
-      <div class="container grid two">
-        <div class="reveal">
-          <h2>Acheter Hay'Ams</h2>
-          <p>Pour commander votre jeu Hay'Ams, contactez-nous ou rendez-vous sur nos partenaires. Livraison en France et à l’international.</p>
-          <ul class="feature-list">
-            <li>Prix indicatif: 24,90 €</li>
-            <li>Contenu: 110 cartes + livret de règles</li>
-            <li>Âge: 7+ | Joueurs: 2–6 | Durée: 20–40 min</li>
-          </ul>
-          <a href="#contact" class="btn btn-primary">Commander par email</a>
-        </div>
-        <div class="reveal">
-          <img src="assets/img/gallery-06.svg" alt="Boîte du jeu Hay'Ams" />
-        </div>
-      </div>
-    </section>
-
     <!-- Contact -->
     <section id="contact" class="section">
       <div class="container">
@@ -233,31 +410,13 @@
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-grid">
-      <div>
-        <h3>Contact</h3>
-        <p>Email: <a href="mailto:hayamsgasygame@gmail.com">hayamsgasygame@gmail.com</a></p>
-        <p class="socials">
-          <a href="#" aria-label="Instagram">Instagram</a>
-          <span>•</span>
-          <a href="#" aria-label="Facebook">Facebook: Hay'Ams</a>
-          <span>•</span>
-          <a href="#" aria-label="X/Twitter">X</a>
-        </p>
-      </div>
-      <div>
-        <h3>À propos</h3>
-        <p>Hay'Ams – Jeu de cartes familial inspiré de la nature de Madagascar.</p>
-        <p class="motto">« Stratégie, esprit d’équipe et nature de Madagascar »</p>
-      </div>
-      <div>
-        <h3>Mentions</h3>
-        <p><a href="#">Mentions légales</a> • © <span id="year"></span> Hay'Ams</p>
-      </div>
+    <div class="container">
+      <p data-i18n="footer.copyright"> Hay'Ams – Jeu de cartes familial inspiré de la nature de Madagascar</p>
     </div>
     <a class="to-top" href="#top" aria-label="Retour en haut">▲</a>
   </footer>
 
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/language-switcher.js"></script>
 </body>
 </html>
